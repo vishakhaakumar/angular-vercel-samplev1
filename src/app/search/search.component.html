@@ -1,0 +1,8 @@
+<section class="filter-wrapper">
+  <div class="keyword-wrapper">
+    <input [formControl]="queryField" type="text" id="keyword" placeholder="search for artists..." autofocus/>
+  </div>
+    <div *ngFor="let result of results; let i=index;">
+      <p>{{result}}</p>
+    </div>
+</section>
